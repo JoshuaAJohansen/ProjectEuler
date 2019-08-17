@@ -7,7 +7,7 @@ What is the largest prime factor of the number 600851475143 ?
 import unittest
 
 from math import floor, sqrt
-from modules.numjy import is_prime
+from modules.is_prime import is_prime
 
 
 def largest_prime_factor(n):

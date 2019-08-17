@@ -3,7 +3,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 
 Find the largest palindrome made from the product of two 3-digit numbers.
 '''
-from modules.string import is_palindrome
+from modules.is_palindrome import is_palindrome
 import unittest
 
 def largest_palindrome_product():
@@ -11,7 +11,7 @@ def largest_palindrome_product():
   for x in range(100,999):
     for y in range(100,999):
       product = x * y
-      if is_palindrome(product) and product > maxPalindrome:
+      if is_palindrome(str(product)) and product > maxPalindrome:
         maxPalindrome = product
   return(maxPalindrome)
 
